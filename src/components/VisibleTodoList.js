@@ -5,7 +5,7 @@ import { withRouter } from "react-router";
 import { getVisibleTodos } from "../reducers/index";
 
 const mapStateToTodoListProps = (state, { params }) => ({
-  todos: getVisibleTodos(state, params.filter || "active")
+  todos: getVisibleTodos(state, params.filter || "all")
 });
 // const mapDispatchToTodoListProps = dispatch => ({
 //   onTodoClick(id) {
