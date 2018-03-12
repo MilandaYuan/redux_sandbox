@@ -6,7 +6,6 @@ const addLoggingToDispatch = store => {
   if (!console.group) {
     return rawDispatch;
   }
-
   return action => {
     console.group(action.type);
     console.log("%c pre state", "color:gray", store.getState());
